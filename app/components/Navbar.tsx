@@ -4,7 +4,7 @@ import React from "react";
 export default function Navbar() {
   return (
     <nav className="w-full  text-white uppercase">
-      <div className="max-w-[1700px] mx-auto px-6 md:px-16 lg:px-24 h-20 flex items-center justify-between">
+      <div className="max-w-375 mx-auto px-6 md:px-16 lg:px-24 h-20 flex items-center justify-between">
         <div className="flex flex-row items-center gap-4 text-4xl font-black tracking-wider cursor-pointer">
           <Image
             src="/marcio_simioni_logo.png"
