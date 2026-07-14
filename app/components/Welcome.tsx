@@ -31,7 +31,7 @@ export default function Welcome() {
 
       <div className="absolute top-0 left-0 w-full h-full bg-black/60 z-10 pointer-events-none" />
 
-      <div className="relative z-20 max-w-[1720px] mx-auto px-6 md:px-16 lg:px-24 grid grid-cols-1 md:grid-cols-2 gap-12 items-center w-full">
+      <div className="relative z-20 max-w-375 mx-auto px-6 md:px-16 lg:px-24 grid grid-cols-1 md:grid-cols-2 gap-12 items-center w-full">
         <div className="flex flex-col gap-6 max-w-xl">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight leading-none text-white drop-shadow-md">
             Olá, sou o<br />
