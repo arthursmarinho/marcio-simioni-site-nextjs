@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { MessageSquare, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 
 export default function CallToAction() {
@@ -8,8 +8,11 @@ export default function CallToAction() {
   const emailUrl = "mailto:contato@marciosimioni.com.br?subject=Orçamento";
 
   return (
-    <div className="grid grid-cols-2 h-250 bg-orange-600" id="contato">
-      <div className="flex flex-col justify-center items-center gap-4 ml-102">
+    <div
+      className="grid grid-cols-1 md:grid-cols-2 h-auto md:h-250 py-16 md:py-0 bg-orange-600 gap-12 md:gap-0"
+      id="contato"
+    >
+      <div className="flex flex-col justify-center items-center gap-4 px-6 md:px-0 md:ml-102">
         <div className="flex flex-col justify-start">
           <h1 className="text-5xl font-black text-white tracking-wider">
             Márcio Simioni
@@ -25,7 +28,7 @@ export default function CallToAction() {
         </div>
       </div>
 
-      <div className="flex justify-start items-center pl-8">
+      <div className="flex justify-center md:justify-start items-center px-6 md:px-0 md:pl-8">
         <div className="w-full max-w-md bg-white rounded-2xl p-8 shadow-xl border border-orange-100 flex flex-col gap-6">
           <div>
             <h3 className="text-2xl font-bold text-gray-900">

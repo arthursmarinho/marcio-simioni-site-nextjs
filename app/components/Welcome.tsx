@@ -15,8 +15,9 @@ export default function Welcome() {
       });
     }
   }, []);
+
   return (
-    <div className="flex-1 min-h-screen relative w-full text-white  md:py-24 overflow-hidden flex items-center">
+    <div className="flex-1 min-h-screen relative w-full text-white py-16 md:py-24 overflow-hidden flex items-center">
       <video
         ref={videoRef}
         autoPlay
@@ -32,7 +33,7 @@ export default function Welcome() {
       <div className="absolute top-0 left-0 w-full h-full bg-black/60 z-10 pointer-events-none" />
 
       <div className="relative z-20 max-w-375 mx-auto px-6 md:px-16 lg:px-24 grid grid-cols-1 md:grid-cols-2 gap-12 items-center w-full">
-        <div className="flex flex-col gap-6 max-w-xl">
+        <div className="flex flex-col gap-6 max-w-xl order-2 md:order-1 text-center md:text-left items-center md:items-start">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight leading-none text-white drop-shadow-md">
             Olá, sou o<br />
             Márcio Simioni
@@ -53,14 +54,15 @@ export default function Welcome() {
           </div>
         </div>
 
-        <div className="relative flex justify-center items-center">
-          <div className="w-full max-w-md relative aspect-square md:aspect-auto md:h-112.5 flex items-end justify-center">
+        <div className="relative flex justify-center items-center order-1 md:order-2">
+          <div className="w-full max-w-xs md:max-w-md relative aspect-square md:aspect-auto md:h-112.5 flex items-end justify-center">
             <div className="text-center text-white/50 border border-white/20 border-dashed rounded-lg p-8 w-full h-full flex items-center justify-center backdrop-blur-sm bg-black/20">
               <Image
                 src="/marcio-simioni.png"
                 alt="Foto do Márcio Simioni"
                 width={330}
                 height={330}
+                className="object-contain"
               />
             </div>
           </div>
