@@ -1,4 +1,5 @@
-import { Button } from "@/components/ui/button";
+"use client";
+
 import { Mail } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 
@@ -9,73 +10,61 @@ export default function CallToAction() {
 
   return (
     <div
-      className="grid grid-cols-1 md:grid-cols-2 h-auto md:h-250 py-16 md:py-0 bg-orange-600 gap-12 md:gap-0"
+      className="relative w-full bg-[#0B132B] text-white py-20 md:py-28 overflow-hidden flex items-center justify-center border-t border-white/5"
       id="contato"
     >
-      <div className="flex flex-col justify-center items-center gap-4 px-6 md:px-0 md:ml-102">
-        <div className="flex flex-col justify-start">
-          <h1 className="text-5xl font-black text-white tracking-wider">
-            Márcio Simioni
-          </h1>
-          <h2 className="text-black text-2xl font-semibold mt-2 ">
-            Quer receber um orçamento?
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(245,73,0,0.08)_0%,transparent_60%)] pointer-events-none" />
+
+      <div className="relative z-10 max-w-4xl mx-auto px-6 text-center space-y-12 w-full">
+        <div className="space-y-4">
+          <span className="text-[#F54900] font-black text-xs tracking-widest uppercase block">
+            Contato
+          </span>
+          <h2 className="text-3xl md:text-5xl font-black tracking-tight leading-tight uppercase max-w-3xl mx-auto">
+            Vamos levar essa palestra <br /> para a sua equipe?
           </h2>
-          <hr className="w-48 h-1 bg-white my-4" />
-          <p className="break-all text-white">
-            <strong>Vamos dar o próximo passo juntos?</strong>
-            <br /> Descubra como posso apoiar seu desenvolvimento.
+          <p className="text-slate-450 text-sm md:text-base max-w-xl mx-auto text-white/70 leading-relaxed">
+            Fale diretamente comigo pelo WhatsApp ou e-mail para verificar
+            disponibilidade de datas, formatos e temas.
           </p>
         </div>
-      </div>
 
-      <div className="flex justify-center md:justify-start items-center px-6 md:px-0 md:pl-8">
-        <div className="w-full max-w-md bg-white rounded-2xl p-8 shadow-xl border border-orange-100 flex flex-col gap-6">
-          <div>
-            <h3 className="text-2xl font-bold text-gray-900">
-              Entre em contato agora
-            </h3>
-            <p className="text-gray-500 mt-2 text-sm">
-              Escolha o canal de sua preferência. Estou pronto para lhe atender
-              e tirar suas dúvidas!
-            </p>
-          </div>
-
-          <div className="flex flex-col gap-3">
-            <Button className="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-6 text-md rounded-xl flex items-center justify-center gap-3 transition-colors shadow-md">
-              <a
-                className="flex flex-row items-center gap-2 "
-                href={whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaWhatsapp className="w-5 h-5" />
-                Falar no WhatsApp
-              </a>
-            </Button>
-
-            <div className="flex items-center my-1">
-              <div className="flex-1 border-t border-gray-200"></div>
-              <span className="px-3 text-xs text-gray-400 uppercase tracking-wider">
-                ou
-              </span>
-              <div className="flex-1 border-t border-gray-200"></div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto pt-4">
+          <a
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative flex flex-col items-center justify-center p-8 rounded-2xl bg-white/[0.02] hover:bg-white/[0.05] border border-white/10 hover:border-[#F54900]/30 transition-all duration-300 shadow-xl"
+          >
+            <div className="w-14 h-14 rounded-full bg-[#F54900] text-[#0B132B] flex items-center justify-center transition-transform duration-300 group-hover:scale-110 shadow-[0_0_20px_rgba(245,73,0,0.3)]">
+              <FaWhatsapp className="w-7 h-7 text-[#0B132B]" />
             </div>
 
-            <Button
-              variant="outline"
-              className="w-full border-2 border-gray-200 hover:bg-gray-50 text-gray-700 font-semibold py-6 text-md rounded-xl flex items-center justify-center gap-3 transition-all"
-            >
-              <a className="flex flex-row items-center gap-2 " href={emailUrl}>
-                <Mail className="w-5 h-5 text-gray-500" />
-                Enviar um E-mail
-              </a>
-            </Button>
-          </div>
+            <h3 className="text-lg font-black uppercase tracking-wider mt-5 mb-1 text-white">
+              WhatsApp
+            </h3>
 
-          <div className="pt-2 border-t border-gray-100 text-xs text-gray-400 text-center flex flex-col gap-1">
-            <span>WhatsApp: (41) 98762-4581</span>
-            <span>E-mail: contato@marciosimioni.com.br</span>
-          </div>
+            <span className="text-xs text-[#F54900] font-semibold tracking-wider flex items-center gap-1 group-hover:underline">
+              Enviar mensagem <span className="text-sm">↗</span>
+            </span>
+          </a>
+
+          <a
+            href={emailUrl}
+            className="group relative flex flex-col items-center justify-center p-8 rounded-2xl bg-white/[0.02] hover:bg-white/[0.05] border border-white/10 hover:border-[#F54900]/30 transition-all duration-300 shadow-xl"
+          >
+            <div className="w-14 h-14 rounded-full bg-[#F54900] text-[#0B132B] flex items-center justify-center transition-transform duration-300 group-hover:scale-110 shadow-[0_0_20px_rgba(245,73,0,0.3)]">
+              <Mail className="w-6 h-6 text-[#0B132B]" />
+            </div>
+
+            <h3 className="text-lg font-black uppercase tracking-wider mt-5 mb-1 text-white">
+              E-mail
+            </h3>
+
+            <span className="text-xs text-[#F54900] font-semibold tracking-wider flex items-center gap-1 group-hover:underline break-all">
+              contato@marciosimioni.com.br <span className="text-sm">↗</span>
+            </span>
+          </a>
         </div>
       </div>
     </div>
