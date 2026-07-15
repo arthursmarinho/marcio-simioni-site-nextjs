@@ -49,7 +49,9 @@ export default function Welcome() {
               variant="outline"
               className="bg-to-black animate-pulse px-10 py-6 text-xl"
             >
-              Saiba Mais <ChevronRightIcon className="ml-2 h-4 w-4" />
+              <a className="flex flex-row items-center gap-2 " href="#empresas">
+                Saiba Mais <ChevronRightIcon className="ml-2 h-4 w-4" />
+              </a>
             </Button>
           </div>
         </div>

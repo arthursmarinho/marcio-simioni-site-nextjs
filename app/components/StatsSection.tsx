@@ -51,13 +51,13 @@ export default function StatsSection() {
   ];
 
   return (
-    <section className="py-16 px-6 lg:py-24 bg-background">
+    <section className="py-16 px-6 bg-green-200 lg:py-24 ">
       <div className="max-w-7xl mx-auto space-y-12">
         <div className="text-center space-y-3">
           <span className="text-xs font-semibold tracking-wider uppercase text-primary bg-primary/10 px-3 py-1 rounded-full">
             Resultados e Impacto
           </span>
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-arvo">
+          <h2 className="text-3xl text-emerald-800 font-bold tracking-tight sm:text-4xl font-arvo">
             Experiência em Números
           </h2>
           <div className="h-1 w-12 bg-primary mx-auto rounded-full mt-2" />
@@ -79,10 +79,10 @@ export default function StatsSection() {
                   </div>
 
                   <div className="space-y-1">
-                    <span className="text-3xl sm:text-4xl font-extrabold tracking-tight block text-foreground font-arvo">
+                    <span className="text-3xl text-emerald-800 sm:text-4xl font-extrabold tracking-tight block font-arvo">
                       {stat.value}
                     </span>
-                    <h3 className="text-sm font-bold text-foreground leading-snug">
+                    <h3 className="text-sm text-emerald-700 font-bold  leading-snug">
                       {stat.label}
                     </h3>
                     <p className="text-xs text-muted-foreground leading-relaxed pt-1">

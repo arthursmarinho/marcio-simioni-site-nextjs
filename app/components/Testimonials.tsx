@@ -153,7 +153,7 @@ export default function TestimonialsCarousel() {
           <span className="text-xs font-semibold tracking-wider uppercase text-primary bg-primary/10 px-3 py-1 rounded-full">
             Depoimentos
           </span>
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-arvo">
+          <h2 className="text-3xl text-blue-700 font-bold tracking-tight sm:text-4xl font-arvo">
             O que dizem sobre o nosso trabalho
           </h2>
           <div className="h-1 w-12 bg-primary mx-auto rounded-full mt-2" />
