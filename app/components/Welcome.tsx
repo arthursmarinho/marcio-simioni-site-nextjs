@@ -52,7 +52,7 @@ export default function Welcome() {
               </a>
             </button>
             <button className="bg-gray-700 text-white px-6 py-4 rounded-4xl font-medium">
-              <a className="flex flex-row items-center gap-2 " href="#empresas">
+              <a className="flex flex-row items-center gap-2 " href="#depoimentos">
                 Ver depoimentos{" "}
                 <PlayIcon className="text-yellow-500 ml-2 h-4 w-4" />
               </a>

@@ -1,5 +1,5 @@
 import { Mail, MessageSquare } from "lucide-react";
-import { FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaInstagram, FaWhatsapp, FaYoutube } from "react-icons/fa";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -29,7 +29,7 @@ export default function Footer() {
               className="p-3 bg-white/5 hover:bg-emerald-600/20 hover:text-emerald-400 rounded-full transition-all duration-300"
               aria-label="WhatsApp"
             >
-              <MessageSquare className="w-5 h-5" />
+              <FaWhatsapp className="w-5 h-5" />
             </a>
 
             <a

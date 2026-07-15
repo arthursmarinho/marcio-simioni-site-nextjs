@@ -147,7 +147,7 @@ export default function TestimonialsCarousel() {
   };
 
   return (
-    <div className="py-16 px-6 lg:py-24 bg-muted/30 overflow-hidden">
+    <div className="py-16 px-6 lg:py-24 bg-muted/30 overflow-hidden" id="depoimentos">
       <div className="max-w-[1900px] mx-auto space-y-12">
         <div className="text-center space-y-3">
           <span className="text-xs font-semibold tracking-wider uppercase text-primary bg-primary/10 px-3 py-1 rounded-full">
