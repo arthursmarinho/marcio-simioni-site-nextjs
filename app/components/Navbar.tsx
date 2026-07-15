@@ -8,7 +8,7 @@ export default function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50 w-full bg-black/95 backdrop-blur-sm text-white uppercase border-b border-white/10">
-      <div className="max-w-screen-xl mx-auto px-6 md:px-12 h-20 flex items-center justify-between">
+      <div className="max-w-screen-xl mx-auto px-6 md:px-12 md:space-x-4 h-20 flex items-center justify-between">
         <div className="flex flex-row items-center gap-4 text-xl sm:text-2xl md:text-3xl font-black tracking-wider cursor-pointer whitespace-nowrap">
           <span>Márcio Simioni</span>
         </div>
