@@ -1,14 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { ArrowRightIcon, Menu, X } from "lucide-react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="sticky top-0 z-50 w-full bg-black/95 backdrop-blur-sm text-white uppercase border-b border-white/10">
-      <div className="max-w-375 mx-auto px-6 md:px-16 lg:px-24 h-20 flex items-center justify-between">
+      <div className="max-w-375 mx-auto px-6 md:px-16 lg:px-24 h-20 flex items-center justify-evenly">
         <div className="flex flex-row items-center gap-4 text-2xl sm:text-3xl md:text-4xl font-black tracking-wider cursor-pointer">
           <span>Márcio Simioni</span>
         </div>
@@ -27,6 +27,15 @@ export default function Navbar() {
             <a href="#contato">Contato</a>
           </li>
         </ul>
+
+        <button className="hidden md:flex bg-yellow-500 text-black px-4 py-2 rounded-4xl font-medium">
+          <a
+            className="flex flex-row items-center --font-inter"
+            href="#empresas"
+          >
+            Contratar Palestra
+          </a>
+        </button>
 
         <button
           onClick={() => setIsOpen(!isOpen)}
