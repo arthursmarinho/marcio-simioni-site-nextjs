@@ -154,8 +154,12 @@ export default function TestimonialsCarousel() {
             Depoimentos
           </span>
           <h2 className="text-3xl text-blue-700 font-bold tracking-tight sm:text-4xl font-arvo">
-            O que dizem sobre o nosso trabalho
+            O que dizem quem ja assistiu
           </h2>
+          <p className="text-muted-foreground">
+            Histórias reais de líderes e profissionais que transformaram sua
+            atuação após as palestras.
+          </p>
           <div className="h-1 w-12 bg-primary mx-auto rounded-full mt-2" />
         </div>
 
