@@ -65,12 +65,12 @@ export default function Content() {
   ];
 
   return (
-    <div className="min-h-screen bg-white pt-20 text-black" id="empresas">
+    <div className="min-h-screen bg-[#ECFDF5] pt-20 text-black" id="empresas">
       <main className="bg-background p-6 lg:p-12 flex flex-col justify-center">
         <div className="max-w-7xl mx-auto w-full space-y-16">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center border-b border-border pb-8">
             <div className="lg:col-span-8 space-y-2">
-              <h1 className="text-4xl font-bold tracking-tight lg:text-5xl font-arvo">
+              <h1 className="text-4xl text-blue-700 font-bold tracking-tight lg:text-5xl font-arvo">
                 Palestras & Workshops
               </h1>
               <p className="text-muted-foreground max-w-2xl">
