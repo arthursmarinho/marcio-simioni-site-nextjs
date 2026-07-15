@@ -8,7 +8,7 @@ export default function CallToAction() {
   const emailUrl = "mailto:contato@marciosimioni.com.br?subject=Orçamento";
 
   return (
-    <div className="grid grid-cols-2 h-250 bg-orange-600">
+    <div className="grid grid-cols-2 h-250 bg-orange-600" id="contato">
       <div className="flex flex-col justify-center items-center gap-4 ml-102">
         <div className="flex flex-col justify-start">
           <h1 className="text-5xl font-black text-white tracking-wider">
