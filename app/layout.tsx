@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Arvo } from "next/font/google";
 import "./globals.css";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 
 export const metadata: Metadata = {
   title: "Marcio Simioni",
@@ -22,7 +24,11 @@ export default function RootLayout({
       lang="en"
       className={`${arvo.className} ${arvo.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
