@@ -1,25 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import {
-  Compass,
-  Users,
-  Clock,
-  Video,
-  MapPin,
-  ShieldAlert,
-  BrainCircuit,
-  ChevronRight,
-  Sparkles,
-} from "lucide-react";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Users, Clock, Video, ShieldAlert } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function Content() {
   const temasLideranca = [
