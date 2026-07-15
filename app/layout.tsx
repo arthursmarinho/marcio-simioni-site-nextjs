@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Arvo } from "next/font/google";
+import { Arvo, Inter } from "next/font/google";
 import "./globals.css";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
@@ -14,6 +14,12 @@ const arvo = Arvo({
   weight: ["400", "700"],
   variable: "--font-arvo",
 });
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-inter",
+});
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -22,7 +28,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${arvo.className} ${arvo.variable} h-full antialiased`}
+      className={`${arvo.className} ${arvo.variable} ${inter.className} ${inter.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <Navbar />
