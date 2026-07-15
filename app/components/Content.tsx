@@ -65,7 +65,7 @@ export default function Content() {
   ];
 
   return (
-    <div className="min-h-screen bg-white pt-20 text-black">
+    <div className="min-h-screen bg-white pt-20 text-black" id="empresas">
       <main className="bg-background p-6 lg:p-12 flex flex-col justify-center">
         <div className="max-w-7xl mx-auto w-full space-y-16">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center border-b border-border pb-8">
