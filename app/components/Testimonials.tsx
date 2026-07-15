@@ -147,14 +147,17 @@ export default function TestimonialsCarousel() {
   };
 
   return (
-    <div className="py-16 px-6 lg:py-24 bg-muted/30 overflow-hidden" id="depoimentos">
+    <div
+      className="py-16 px-6 lg:py-24 bg-muted/30 overflow-hidden"
+      id="depoimentos"
+    >
       <div className="max-w-[1900px] mx-auto space-y-12">
         <div className="text-center space-y-3">
           <span className="text-xs font-semibold tracking-wider uppercase text-primary bg-primary/10 px-3 py-1 rounded-full">
             Depoimentos
           </span>
           <h2 className="text-3xl text-blue-700 font-bold tracking-tight sm:text-4xl font-arvo">
-            O que dizem quem ja assistiu
+            O que dizem quem já assistiu
           </h2>
           <p className="text-muted-foreground">
             Histórias reais de líderes e profissionais que transformaram sua
