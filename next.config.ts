@@ -12,7 +12,7 @@ const nextConfig = {
     ],
   },
   basePath: "/empresas",
-  assetPrefix: 'https://marcio-simioni-site-nextjs.vercel.app',
+  assetPrefix: "https://marcio-simioni-site-nextjs.vercel.app/empresas",
 };
 
 module.exports = nextConfig;
