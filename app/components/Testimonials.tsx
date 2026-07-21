@@ -94,11 +94,12 @@ export default function TestimonialsCarousel() {
     {
       id: 8,
       type: "text",
-      name: "Pamela Vilma Suzin",
-      company: "Copel Holding",
-      role: "Gerente da Área de Saúde e Qualidade de Vida",
-      text: "Tive o prazer de trabalhar com o Márcio na Companhia Paranaense de Energia – Copel Distribuição, na área de Treinamento e Desenvolvimento. Gostaria de expressar minha profunda gratidão e reconhecimento pelo seu trabalho excepcional e profissionalismo exemplar.Márcio não mede esforços para garantir que todas as tarefas sejam concluídas com máxima eficiência e qualidade. Ele é um colega excepcional, sempre disposto a oferecer ajuda e compartilhar conhecimentos, promovendo um ambiente de trabalho harmonioso, produtivo e inovador. A paixão pelo que faz é evidente e contagiante em todos os aspectos de sua atuação. Sua dedicação, competência e entusiasmo são inspiradores em todos os trabalhos que realiza, seu legado a cada projeto realizado!",
+      name: "Claudinei Neumann",
+      company: "Copel Distribuição",
+      role: "Gerente de Faturamento",
+      text: "Caro Márcio, Gostaria de expressar minha mais profunda gratidão por todas as sessões do processo de desenvolvimento individual que tivemos focado em concentração. Desde o momento em que começamos essa jornada juntos, experimentei uma transformação notável em minha capacidade de concentração e foco. Suas orientações perspicazes e técnicas eficazes me ajudaram a superar obstáculos que pareciam insuperáveis. Aprendi a direcionar minha energia de forma mais eficiente, a eliminar distrações e a cultivar um estado de atenção plena que antes parecia escapar-me. Além disso, quero agradecer a paciência e empatia que você demonstrou em cada sessão. Sua habilidade de compreender minhas necessidades individuais e adaptar seu método para atender a elas foi fundamental para o meu progresso. Hoje, sinto-me mais confiante e produtivo do que nunca, e devo isso em grande parte ao seu apoio dedicação e expertise. Estou verdadeiramente grato por ter você como meu orientador e por todo o conhecimento valioso que você compartilhou comigo. Espero continuar aplicando as lições que aprendi durante nosso tempo juntos e levar adiante o crescimento pessoal que alcançamos. Mais uma vez, obrigado(a) por tudo. Gratidão!! Gratidão!! Gratidão!!!! Um Forte abraço, muito SUCESSO em sua jornada!!",
     },
+
     {
       id: 9,
       type: "video",
@@ -123,16 +124,9 @@ export default function TestimonialsCarousel() {
       role: "Gerente da Área de Faturamento Grandes Clientes",
       youtubeVideoId: "IZyWVKUMDCw",
     },
+
     {
       id: 12,
-      type: "text",
-      name: "Claudinei Neumann",
-      company: "Copel Distribuição",
-      role: "Gerente de Faturamento",
-      text: "Caro Márcio, Gostaria de expressar minha mais profunda gratidão por todas as sessões do processo de desenvolvimento individual que tivemos focado em concentração. Desde o momento em que começamos essa jornada juntos, experimentei uma transformação notável em minha capacidade de concentração e foco. Suas orientações perspicazes e técnicas eficazes me ajudaram a superar obstáculos que pareciam insuperáveis. Aprendi a direcionar minha energia de forma mais eficiente, a eliminar distrações e a cultivar um estado de atenção plena que antes parecia escapar-me. Além disso, quero agradecer a paciência e empatia que você demonstrou em cada sessão. Sua habilidade de compreender minhas necessidades individuais e adaptar seu método para atender a elas foi fundamental para o meu progresso. Hoje, sinto-me mais confiante e produtivo do que nunca, e devo isso em grande parte ao seu apoio dedicação e expertise. Estou verdadeiramente grato por ter você como meu orientador e por todo o conhecimento valioso que você compartilhou comigo. Espero continuar aplicando as lições que aprendi durante nosso tempo juntos e levar adiante o crescimento pessoal que alcançamos. Mais uma vez, obrigado(a) por tudo. Gratidão!! Gratidão!! Gratidão!!!! Um Forte abraço, muito SUCESSO em sua jornada!!",
-    },
-    {
-      id: 13,
       type: "video",
       name: "Louanne Mellina Paludo",
       company: "Copel Distribuição",

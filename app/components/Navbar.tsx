@@ -24,13 +24,13 @@ export default function Navbar() {
             <a href="#sobre">Sobre</a>
           </li>
           <li className="cursor-pointer hover:text-orange-500 transition-colors">
-            <a href="#contato">Contato</a>
+            <a href="#contatos">Contato</a>
           </li>
         </ul>
 
         <div className="hidden md:block text-xl sm:text-2xl md:text-3xl">
           <button className="bg-yellow-500 text-black px-5 py-2.5 rounded-full font-medium text-sm hover:bg-yellow-400 transition-colors">
-            <a href="contato">Contratar Palestra</a>
+            <a href="https://api.whatsapp.com/send/?phone=5541987624581&text=Ol%C3%A1%2C+gostaria+de+solicitar+um+or%C3%A7amento.&type=phone_number&app_absent=0">Contratar Palestra</a>
           </button>
         </div>
 

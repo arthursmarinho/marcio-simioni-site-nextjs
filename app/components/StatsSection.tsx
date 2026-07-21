@@ -51,7 +51,7 @@ export default function StatsSection() {
   ];
 
   return (
-    <section className="py-16 px-6 bg-blue-200 lg:py-24 ">
+    <section className="py-16 px-6 bg-blue-200 lg:py-24" id="sobre">
       <div className="max-w-7xl mx-auto space-y-12">
         <div className="text-center space-y-3">
           <span className="text-xs font-semibold tracking-wider uppercase text-primary bg-primary/10 px-3 py-1 rounded-full">

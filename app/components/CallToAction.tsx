@@ -11,7 +11,7 @@ export default function CallToAction() {
   return (
     <div
       className="relative w-full bg-[#0B132B] text-white py-20 md:py-28 overflow-hidden flex items-center justify-center border-t border-white/5"
-      id="contato"
+      id="contatos"
     >
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(245,73,0,0.08)_0%,transparent_60%)] pointer-events-none" />
 

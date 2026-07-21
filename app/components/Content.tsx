@@ -28,7 +28,6 @@ export default function Content() {
   return (
     <div
       className="min-h-screen bg-[#ECFDF5] py-20 text-[#0B132B] flex justify-center"
-      id="empresas"
     >
       <main className="max-w-7xl mx-auto w-full px-6 lg:px-12 space-y-20">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
