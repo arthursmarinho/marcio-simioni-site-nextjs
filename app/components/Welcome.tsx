@@ -26,7 +26,7 @@ export default function Welcome() {
         playsInline
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
       >
-        <source src="/videofundo.mp4" type="video/mp4" />
+        <source src="https://marcio-simioni-site-nextjs.vercel.app/videofundo.mp4" type="video/mp4" />
         Seu navegador não suporta vídeos.
       </video>
 
