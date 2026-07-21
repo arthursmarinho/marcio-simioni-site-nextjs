@@ -11,6 +11,8 @@ const nextConfig = {
       },
     ],
   },
+  basePath: "/empresas",
+  assetPrefix: 'https://marcio-simioni-site-nextjs.vercel.app',
 };
 
 module.exports = nextConfig;
