@@ -21,7 +21,13 @@ export default function Navbar() {
             <a href="#empresas">Para Empresas</a>
           </li>
           <li className="cursor-pointer hover:text-orange-500 transition-colors">
+            <a href="#temas">Temas</a>
+          </li>
+          <li className="cursor-pointer hover:text-orange-500 transition-colors">
             <a href="#sobre">Sobre</a>
+          </li>
+          <li className="cursor-pointer hover:text-orange-500 transition-colors">
+            <a href="#depoimentos">Depoimentos</a>
           </li>
           <li className="cursor-pointer hover:text-orange-500 transition-colors">
             <a href="#contatos">Contato</a>
@@ -66,7 +72,31 @@ export default function Navbar() {
               className="cursor-pointer hover:text-orange-500 transition-colors"
               onClick={() => setIsOpen(false)}
             >
-              <a href="#contato" className="block w-full">
+              <a href="#temas" className="block w-full">
+                Temas
+              </a>
+            </li>
+            <li
+              className="cursor-pointer hover:text-orange-500 transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              <a href="#sobre" className="block w-full">
+                Sobre
+              </a>
+            </li>
+            <li
+              className="cursor-pointer hover:text-orange-500 transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              <a href="#depoimentos" className="block w-full">
+                Depoimentos
+              </a>
+            </li>
+            <li
+              className="cursor-pointer hover:text-orange-500 transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              <a href="#contatos" className="block w-full">
                 Contato
               </a>
             </li>

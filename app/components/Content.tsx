@@ -126,7 +126,7 @@ export default function Content() {
           </div>
         </div>
 
-        <div className="space-y-8 pt-8 border-t border-slate-300">
+        <div id="temas" className="space-y-8 pt-8 border-t border-slate-300">
           <div className="space-y-1">
             <span className="text-[#F54900] font-bold text-xs tracking-widest uppercase block">
               Temas das Palestras
