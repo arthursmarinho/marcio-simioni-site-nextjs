@@ -62,7 +62,7 @@ export default function TestimonialsCarousel() {
     {
       id: 4,
       type: "text",
-      name: "Ana Slvia Alves Borgo",
+      name: "Ana Silvia Alves Borgo",
       company: "Faktor Consulting",
       role: "Psicóloga, Mestra em Administração, Consultora Organizacional e Didata formadora em processos de grupo pela SBDG-RS",
       text: "Márcio possui valores, características pessoais e competências técnicas, que são fundamentais para um consultor e facilitador de grupos. Os valores que se destacam são integridade, respeito e ética profissional. Os relacionamentos interpessoais são favorecidos, principalmente, por características pessoais como um ótimo ouvinte, empático e acolhedor, que facilitam a formação e manutenção dos vínculos pessoais e profissionais. Suas competências técnicas como consultor e como facilitador de grupos, são resultados de sua dedicação e comprometimento com seu autodesenvolvimento, atualização constante e, principalmente, o compromisso ético de oferecer o melhor às empresas-clientes. Tive o privilégio de coordená-lo na Formação de Desenvolvimento de Grupos da SBDG e, hoje, sinto muito orgulho de ver o seu crescimento e suas conquistas. Um profissional que eu recomendo!",
