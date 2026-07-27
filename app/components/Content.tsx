@@ -111,7 +111,7 @@ export default function Content() {
               </div>
             </div>
 
-            <div className="flex flex-wrap gap-6 pt-2 text-xs text-slate-600 font-medium">
+            <div className="flex flex-wrap gap-6 pt-2 text-xs text-slate-600 font-medium " id="temas" >
               <span className="flex items-center gap-1.5">
                 <Video className="h-4 w-4 text-[#F54900]" />
                 Formato:{" "}
@@ -126,12 +126,12 @@ export default function Content() {
           </div>
         </div>
 
-        <div id="temas" className="space-y-8 pt-8 border-t border-slate-300">
+        <div className="space-y-8 pt-8 border-t border-slate-300">
           <div className="space-y-1">
             <span className="text-[#F54900] font-bold text-xs tracking-widest uppercase block">
               Temas das Palestras
             </span>
-            <h2 className="text-3xl font-black text-[#0B132B] uppercase">
+            <h2 className="text-3xl font-blTemas das Palesack text-[#0B132B] uppercase">
               Conteúdos que geram mudança real
             </h2>
           </div>
