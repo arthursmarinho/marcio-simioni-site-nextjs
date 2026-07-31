@@ -31,10 +31,7 @@ export default function Welcome() {
       <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/75 to-black/90 z-10 pointer-events-none" />
 
       <div className="relative z-20 max-w-5xl mx-auto px-6 md:px-12 w-full flex flex-col items-center text-center gap-8">
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-yellow-500/10 border border-yellow-500/30 text-yellow-400 text-xs md:text-sm font-semibold tracking-wider uppercase backdrop-blur-sm">
-          <Award className="w-4 h-4 text-yellow-500" />
-          Palestras & Treinamentos Corporativos
-        </div>
+       
 
         <h1 className="uppercase text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tight leading-[1.02] text-white max-w-4xl">
           Desenvolva Líderes. <br />
@@ -61,21 +58,6 @@ export default function Welcome() {
           >
             Conhecer Temas <ChevronRightIcon className="h-5 w-5 text-yellow-500 shrink-0" />
           </a>
-        </div>
-
-        <div className="w-full max-w-3xl pt-12 mt-4 border-t border-white/15 grid grid-cols-2 sm:grid-cols-3 gap-6 text-center">
-          <div className="flex flex-col items-center">
-            <span className="text-xl sm:text-2xl font-bold text-white">Conteúdo</span>
-            <span className="text-xs sm:text-sm text-yellow-500/90 font-medium uppercase tracking-wider mt-0.5">100% Personalizado</span>
-          </div>
-          <div className="flex flex-col items-center">
-            <span className="text-xl sm:text-2xl font-bold text-white">Foco Em</span>
-            <span className="text-xs sm:text-sm text-yellow-500/90 font-medium uppercase tracking-wider mt-0.5">Cultura & Liderança</span>
-          </div>
-          <div className="col-span-2 sm:col-span-1 flex flex-col items-center">
-            <span className="text-xl sm:text-2xl font-bold text-white">Atendimento</span>
-            <span className="text-xs sm:text-sm text-yellow-500/90 font-medium uppercase tracking-wider mt-0.5">Em Todo o Brasil</span>
-          </div>
         </div>
       </div>
     </section>
