@@ -54,7 +54,7 @@ export default function Impact() {
     <section id="impacto" className="relative overflow-hidden py-24 md:py-32">
       <div className="absolute inset-y-0 right-0 hidden w-[42%] lg:block">
         <Image
-          src="/images/marcio-content.webp"
+          src="/palestra.jpg"
           alt="Márcio Simioni em palestra"
           fill
           className="object-cover object-[center_20%]"
