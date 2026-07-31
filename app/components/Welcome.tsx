@@ -48,13 +48,13 @@ export default function Welcome() {
           <div className="pt-2 flex flex-col sm:flex-row gap-4 w-full justify-center md:justify-start">
             <a
               href="https://api.whatsapp.com/send/?phone=5541987624581&text=Ol%C3%A1%2C+gostaria+de+solicitar+um+or%C3%A7amento.&type=phone_number&app_absent=0"
-              className="bg-yellow-500 text-black px-6 py-3.5 rounded-xl font-medium inline-flex items-center justify-center gap-2 w-full sm:w-auto"
+              className="bg-yellow-500 text-black px-6 py-3.5 rounded-xl font-medium inline-flex items-center justify-center gap-2 w-full sm:w-auto whitespace-nowrap"
             >
               Solicitar Proposta <ArrowRightIcon className="h-4 w-4 shrink-0" />
             </a>
             <a
               href="#depoimentos"
-              className="bg-gray-700 text-white px-6 py-3.5 rounded-xl font-medium inline-flex items-center justify-center gap-2 w-full sm:w-auto"
+              className="bg-gray-700 text-white px-6 py-3.5 rounded-xl font-medium inline-flex items-center justify-center gap-2 w-full sm:w-auto whitespace-nowrap"
             >
               Conhecer Temas das Palestras{" "}
               <PlayIcon className="text-yellow-500 h-4 w-4 shrink-0" />
