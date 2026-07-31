@@ -1,98 +1,90 @@
-import React from "react";
-import {
-  Calendar,
-  Users,
-  Clock,
-  GraduationCap,
-  Compass,
-  Layers,
-} from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
+"use client";
 
-export default function StatsSection() {
-  const stats = [
-    {
-      value: "15+",
-      label: "Anos de Experiência",
-      icon: Calendar,
-      description: "De atuação prática no mercado.",
-    },
-    {
-      value: "1.000+",
-      label: "Líderes Desenvolvidos",
-      icon: Users,
-      description: "Que passaram por programas e processos de desenvolvimento.",
-    },
-    {
-      value: "2.000+",
-      label: "Horas de Mentoria Individual",
-      icon: Clock,
-      description: "Focadas no desenvolvimento de competências de liderança.",
-    },
-    {
-      value: "4.000+",
-      label: "Horas de Cursos e Workshops",
-      icon: GraduationCap,
-      description: "Treinamentos, palestras e oficinas presenciais e online.",
-    },
-    {
-      value: "800+",
-      label: "Processos de Mentoria Coordenados",
-      icon: Compass,
-      description: "Acompanhamento estratégico e estruturado.",
-    },
-    {
-      value: "100+",
-      label: "Programas Elaborados",
-      icon: Layers,
-      description:
-        "E executados sob medida para o desenvolvimento de lideranças.",
-    },
-  ];
+import {
+  motion,
+  useInView,
+  useMotionValue,
+  useReducedMotion,
+  useSpring,
+} from "framer-motion";
+import Image from "next/image";
+import { useEffect, useRef } from "react";
+import { STATS } from "../data/content";
+import { Reveal } from "./Reveal";
+
+function AnimatedNumber({
+  value,
+  suffix,
+}: {
+  value: number;
+  suffix: string;
+}) {
+  const ref = useRef<HTMLSpanElement>(null);
+  const inView = useInView(ref, { once: true, amount: 0.6 });
+  const reduce = useReducedMotion();
+  const motionValue = useMotionValue(0);
+  const spring = useSpring(motionValue, { stiffness: 70, damping: 22 });
+
+  useEffect(() => {
+    if (inView) motionValue.set(value);
+  }, [inView, motionValue, value]);
+
+  useEffect(() => {
+    if (reduce && ref.current) {
+      ref.current.textContent = `${value.toLocaleString("pt-BR")}${suffix}`;
+      return;
+    }
+
+    const unsubscribe = spring.on("change", (latest) => {
+      if (!ref.current) return;
+      ref.current.textContent = `${Math.round(latest).toLocaleString("pt-BR")}${suffix}`;
+    });
+    return unsubscribe;
+  }, [reduce, spring, suffix, value]);
 
   return (
-    <section className="py-16 px-6 bg-blue-200 lg:py-24" id="sobre">
-      <div className="max-w-7xl mx-auto space-y-12">
-        <div className="text-center space-y-3">
-          <span className="text-xs font-semibold tracking-wider uppercase text-primary bg-primary/10 px-3 py-1 rounded-full">
-            Resultados e Impacto
-          </span>
-          <h2 className="text-3xl text-blue-700 font-bold tracking-tight sm:text-4xl font-arvo">
-            Experiência em Números
-          </h2>
-          <div className="h-1 w-12 bg-primary mx-auto rounded-full mt-2" />
-        </div>
+    <span ref={ref} className="tabular-nums">
+      0{suffix}
+    </span>
+  );
+}
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {stats.map((stat, index) => {
-            const Icon = stat.icon;
-            return (
-              <Card
-                key={index}
-                className="group relative overflow-hidden transition-all duration-300 hover:shadow-md hover:border-primary/20 bg-linear-to-b from-card to-muted/10"
-              >
-                <div className="absolute top-0 left-0 w-full h-[2px] bg-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+export function Impact() {
+  return (
+    <section id="impacto" className="relative overflow-hidden py-24 md:py-32">
+      <div className="absolute inset-y-0 right-0 hidden w-[42%] lg:block">
+        <Image
+          src="/images/marcio-content.webp"
+          alt="Márcio Simioni em palestra"
+          fill
+          className="object-cover object-[center_20%]"
+          sizes="42vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-[color:var(--mist)] via-[color:var(--mist)]/85 to-transparent" />
+      </div>
 
-                <CardContent className="p-6 sm:p-8 flex items-start gap-4">
-                  <div className="p-3 bg-muted group-hover:bg-primary/10 text-muted-foreground group-hover:text-primary rounded-xl transition-colors duration-300 shrink-0">
-                    <Icon className="h-6 w-6" />
-                  </div>
+      <div className="relative mx-auto max-w-6xl px-5 md:px-8">
+        <Reveal className="max-w-xl">
+          <p className="section-kicker">Resultados e Impacto</p>
+          <h2 className="section-title mt-3">Experiência em Números</h2>
+        </Reveal>
 
-                  <div className="space-y-1">
-                    <span className="text-3xl text-blue-800 sm:text-4xl font-extrabold tracking-tight block font-arvo">
-                      {stat.value}
-                    </span>
-                    <h3 className="text-sm text-blue-700 font-bold  leading-snug">
-                      {stat.label}
-                    </h3>
-                    <p className="text-xs text-muted-foreground leading-relaxed pt-1">
-                      {stat.description}
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-            );
-          })}
+        <div className="mt-14 grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:max-w-[55%]">
+          {STATS.map((stat, i) => (
+            <Reveal key={stat.label} delay={i * 0.05}>
+              <motion.div whileHover={{ x: 4 }} transition={{ duration: 0.25 }}>
+                <p className="font-[family-name:var(--font-display)] text-5xl tracking-tight text-[color:var(--ink)] md:text-6xl">
+                  <AnimatedNumber value={stat.value} suffix={stat.suffix} />
+                </p>
+                <h3 className="mt-2 text-base font-semibold text-[color:var(--ink)]">
+                  {stat.label}
+                </h3>
+                <p className="mt-1 text-sm leading-relaxed text-[color:var(--ink-soft)]">
+                  {stat.detail}
+                </p>
+              </motion.div>
+            </Reveal>
+          ))}
         </div>
       </div>
     </section>
