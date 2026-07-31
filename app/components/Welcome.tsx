@@ -36,7 +36,6 @@ export default function Welcome() {
         <div className="flex flex-col gap-6 max-w-xl order-2 md:order-1 text-center md:text-left items-center md:items-start min-w-0 w-full">
           <h1 className="uppercase text-4xl md:text-5xl lg:text-7xl font-black tracking-tight leading-none text-white drop-shadow-md break-words">
            Desenvolva Líderes.
-            <span className="text-yellow-500">Engaje Equipes.</span>
             <span className="text-yellow-500">Transforme Resultados.</span>
           </h1>
 
