@@ -49,7 +49,7 @@ function AnimatedNumber({
   );
 }
 
-export function Impact() {
+export default function Impact() {
   return (
     <section id="impacto" className="relative overflow-hidden py-24 md:py-32">
       <div className="absolute inset-y-0 right-0 hidden w-[42%] lg:block">
