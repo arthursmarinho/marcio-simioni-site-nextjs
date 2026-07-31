@@ -62,20 +62,6 @@ export default function Welcome() {
           </div>
         </div>
 
-        <div className="flex justify-center items-center order-1 md:order-2 w-full min-w-0">
-          <div className="w-full max-w-xs md:max-w-sm lg:max-w-md relative aspect-square flex items-end justify-center">
-            <div className="text-center text-white/50 border border-white/20 border-dashed rounded-lg p-6 md:p-8 w-full h-full flex items-end justify-center backdrop-blur-sm bg-black/20 overflow-hidden">
-              <Image
-                loading="eager"
-                src="/marcio-welcome.png"
-                alt="Foto do Márcio Simioni"
-                width={350}
-                height={350}
-                className="w-auto h-full max-h-full object-contain object-bottom"
-              />
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );
