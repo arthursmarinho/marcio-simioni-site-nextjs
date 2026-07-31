@@ -35,7 +35,7 @@ export default function Navbar() {
         </ul>
 
         <div className="hidden md:block text-xl sm:text-2xl md:text-3xl">
-          <button className="bg-yellow-500 text-black px-5 py-2.5 rounded-full font-medium text-sm hover:bg-yellow-400 transition-colors">
+          <button className="bg-yellow-500 text-black px-5 py-2.5 rounded-2xl font-medium text-sm hover:bg-yellow-400 transition-colors">
             <a href="https://api.whatsapp.com/send/?phone=5541987624581&text=Ol%C3%A1%2C+gostaria+de+solicitar+um+or%C3%A7amento.&type=phone_number&app_absent=0">Contratar Palestra</a>
           </button>
         </div>
@@ -105,7 +105,7 @@ export default function Navbar() {
           <div className="pt-4 border-t border-white/10">
             <a
               onClick={() => setIsOpen(false)}
-              className="block text-center bg-yellow-500 text-black px-4 py-3 rounded-full font-semibold text-sm hover:bg-yellow-400 transition-colors"
+              className="block text-center bg-yellow-500 text-black px-4 py-3 rounded-2xl font-semibold text-sm hover:bg-yellow-400 transition-colors"
               href="#empresas"
             >
               Contratar Palestra
