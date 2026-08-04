@@ -28,7 +28,8 @@ export default function Content() {
   return (
     <div
       className="min-h-screen bg-[#ECFDF5] py-20 text-[#0B132B] flex justify-center"
-    id="empresas">
+      id="empresas"
+    >
       <main className="max-w-7xl mx-auto w-full px-6 lg:px-12 space-y-20">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-5 flex justify-center items-center h-[500px] relative">
@@ -65,23 +66,12 @@ export default function Content() {
 
             <div className="text-base leading-relaxed text-[#0B132B]/85 space-y-4 max-w-2xl">
               <p>
-                Ainda que se trate de exposição breve, uma palestra eficaz deve
-                ser planejada e conduzida de forma a{" "}
-                <strong className="text-[#0B132B] font-semibold">
-                  inspirar as pessoas
-                </strong>{" "}
-                a aprimorarem algum aspecto de sua atuação profissional ou de
-                seu comportamento — já a partir do momento em que retornam às
-                suas rotinas.
-              </p>
-              <p>
-                Isso acontece quando a condução é feita com base em{" "}
-                <strong className="text-[#0B132B] font-semibold">
-                  experiência prática
-                </strong>
-                , o que torna a mensagem mais genuína, conecta o público à
-                realidade do dia a dia e desperta o desejo de agir de maneira
-                diferente.
+                Mais do que transmitir conhecimento, uma palestra deve provocar
+                reflexões, gerar inspiração e incentivar mudanças concretas de
+                comportamento. Com abordagem fundamentada na experiência
+                prática, as palestras conectam os conceitos à realidade dos
+                líderes nas organizações, despertando o desejo de aplicar novos
+                conhecimentos em seu ambiente de trabalho.
               </p>
             </div>
 
@@ -111,7 +101,10 @@ export default function Content() {
               </div>
             </div>
 
-            <div className="flex flex-wrap gap-6 pt-2 text-xs text-slate-600 font-medium " id="temas" >
+            <div
+              className="flex flex-wrap gap-6 pt-2 text-xs text-slate-600 font-medium "
+              id="temas"
+            >
               <span className="flex items-center gap-1.5">
                 <Video className="h-4 w-4 text-[#F54900]" />
                 Formato:{" "}

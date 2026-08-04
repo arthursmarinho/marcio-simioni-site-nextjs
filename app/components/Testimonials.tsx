@@ -151,7 +151,7 @@ export default function TestimonialsCarousel() {
             Depoimentos
           </span>
           <h2 className="text-3xl text-blue-700 font-bold tracking-tight sm:text-4xl font-arvo">
-            O que dizem quem já assistiu
+            O que diz quem já assistiu
           </h2>
           <p className="text-muted-foreground">
             Histórias reais de líderes e profissionais que transformaram sua
